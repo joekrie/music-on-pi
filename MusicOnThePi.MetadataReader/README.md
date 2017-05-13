@@ -1,0 +1,3 @@
+﻿# MusicOnThePi.MetadataReader
+
+

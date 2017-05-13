@@ -1,0 +1,33 @@
+﻿@model MusicOnThePi.WebApp.ViewModels.Upload.UploadStep1ViewModel
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+
+<!DOCTYPE html>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<title>Music Uploader</title>
+<link rel="stylesheet" href="/app.css">
+
+<form method="post" enctype="multipart/form-data">
+    <div>
+        <label>
+            Artist/Composer
+            <input asp-for="Artist" />
+        </label>
+    </div>
+    <div>
+        <label>
+            Album/Work
+            <input asp-for="Album" />
+        </label>
+    </div>
+    <div>
+        <label>
+            Tracks
+            <input type="file" multiple asp-for="TrackFiles" />
+        </label>
+    </div>
+    <div>
+        <button type="submit">Next</button>
+    </div>
+</form>
